@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f6f0e4"><title>Resume analyzer | CareerAI</title>
+<link rel="stylesheet" href="/bhanu.css">
+</head><body><div class="app-shell">
+<aside class="sidebar">
+  <a class="brand" href="/dashboard"><span class="brand-mark">✦</span><span>Career<span class="brand-accent">AI</span><small>CAREER COMPANION</small></span></a>
+  <div class="nav-label">WORKSPACE</div>
+  <a class="nav-item " href="/dashboard"><span>⌂</span> Overview</a>
+  <a class="nav-item active" href="/resume"><span>▤</span> Resume analyzer</a>
+  <a class="nav-item " href="/career"><span>◎</span> Career guidance</a>
+  <a class="nav-item " href="/interview"><span>✧</span> Interview prep <span class="nav-new">NEW</span></a>
+  <div class="sidebar-bottom">
+    <div class="sidebar-tip"><span class="tip-icon">✦</span><strong>Your next opportunity starts here.</strong><p>Small steps today. A stronger career tomorrow.</p></div>
+    <div class="profile"><div class="avatar">✦</div><div><strong>Your workspace</strong><small>Personal learning hub</small></div></div>
+    <a class="nav-item logout-link" href="/logout"><span>↪</span> Sign out</a>
+  </div>
+</aside>
+
+<main class="main-content">
+<header class="topbar"><div class="mobile-brand">✦ Career<span>AI</span></div><div class="breadcrumb">Workspace <span>/</span> <strong>Resume analyzer</strong></div><div class="topbar-right"><span class="status-dot"></span> AI career assistant <div class="top-avatar">✦</div></div></header>
+<section class="section-heading page-heading"><div><div class="eyebrow muted">CAREER TOOL · 01</div><h2>Make your resume work harder</h2><p>Upload a resume and get practical, role-focused suggestions.</p></div><a class="date-chip back-chip" href="/dashboard">← Back to overview</a></section>
+<section class="tool-grid single-tool-grid"><article class="tool-card" id="resume-card">
+          <div class="card-top"><div class="tool-icon icon-violet">▤</div><span class="tag">CAREER TOOL</span></div>
+          <h3>Resume analyzer</h3><p class="card-description">Get practical feedback on your resume and see how it matches your target role.</p>
+          <label for="resume">Upload your resume</label>
+          <div class="file-drop" id="fileDrop"><div class="upload-symbol">↑</div><div><strong id="fileName">Choose a PDF, DOCX or TXT file</strong><small>Maximum file size: 5 MB</small></div><input type="file" id="resume" accept=".pdf,.docx,.txt"></div>
+          <label for="job">Target job description <span class="optional">Optional</span></label>
+          <textarea id="job" placeholder="Paste the job description to get more relevant feedback..."></textarea>
+          <button class="btn btn-primary" onclick="analyzeResume()"><span>Analyze my resume</span><span>→</span></button>
+          <div id="resumeResult" class="result" aria-live="polite"></div>
+        </article></section>
+<footer><span>✦ CareerAI</span><span>Built for your next chapter · 2026</span></footer>
+</main></div><script src="/bhanu.js"></script></body></html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f6f0e4"><title>Interview preparation | CareerAI</title>
+<link rel="stylesheet" href="/bhanu.css">
+</head><body><div class="app-shell">
+<aside class="sidebar">
+  <a class="brand" href="/dashboard"><span class="brand-mark">✦</span><span>Career<span class="brand-accent">AI</span><small>CAREER COMPANION</small></span></a>
+  <div class="nav-label">WORKSPACE</div>
+  <a class="nav-item " href="/dashboard"><span>⌂</span> Overview</a>
+  <a class="nav-item " href="/resume"><span>▤</span> Resume analyzer</a>
+  <a class="nav-item " href="/career"><span>◎</span> Career guidance</a>
+  <a class="nav-item active" href="/interview"><span>✧</span> Interview prep <span class="nav-new">NEW</span></a>
+  <div class="sidebar-bottom">
+    <div class="sidebar-tip"><span class="tip-icon">✦</span><strong>Your next opportunity starts here.</strong><p>Small steps today. A stronger career tomorrow.</p></div>
+    <div class="profile"><div class="avatar">✦</div><div><strong>Your workspace</strong><small>Personal learning hub</small></div></div>
+    <a class="nav-item logout-link" href="/logout"><span>↪</span> Sign out</a>
+  </div>
+</aside>
+
+<main class="main-content">
+<header class="topbar"><div class="mobile-brand">✦ Career<span>AI</span></div><div class="breadcrumb">Workspace <span>/</span> <strong>Interview preparation</strong></div><div class="topbar-right"><span class="status-dot"></span> AI career assistant <div class="top-avatar">✦</div></div></header>
+<section class="section-heading page-heading"><div><div class="eyebrow muted">COMPANY INTERVIEW LAB · 03</div><h2>Prepare with purpose</h2><p>Create a focused interview preparation plan for your target company and role.</p></div><a class="date-chip back-chip" href="/dashboard">← Back to overview</a></section>
+<section class="tool-grid single-tool-grid"><article class="tool-card interview-card" id="interview-card">
+          <div class="card-top"><div class="tool-icon icon-orange">✧</div><span class="tag tag-new">NEW FEATURE</span></div>
+          <h3>Company interview lab</h3><p class="card-description">Build a focused preparation plan for a company and role, then practice likely interview questions.</p>
+          <div class="company-banner"><div class="company-symbol">✦</div><div><strong>Practice with purpose</strong><small>Company • Role • Experience level</small></div><span class="banner-arrow">↗</span></div>
+          <label for="company">Target company</label>
+          <input id="company" type="text" placeholder="e.g. TCS, Google, Infosys, Amazon">
+          <label for="interviewRole">Role you are applying for</label>
+          <input id="interviewRole" type="text" placeholder="e.g. Graduate software engineer">
+          <div class="field-row">
+            <div><label for="experienceLevel">Experience level</label><select id="experienceLevel"><option value="Fresher / entry-level">Fresher / entry-level</option><option value="Internship">Internship</option><option value="1–3 years">1–3 years</option><option value="3+ years">3+ years</option></select></div>
+            <div><label for="prepFocus">Preparation focus</label><select id="prepFocus"><option value="Balanced preparation">Balanced</option><option value="Technical questions">Technical</option><option value="HR and behavioral questions">HR / behavioral</option><option value="Coding and problem solving">Coding</option><option value="Company and role research">Company research</option></select></div>
+          </div>
+          <label for="interviewSkills">Skills or topics to practice <span class="optional">Optional</span></label>
+          <textarea id="interviewSkills" class="short-textarea" placeholder="e.g. Java, SQL, OOP, projects, communication"></textarea>
+          <button class="btn btn-dark" onclick="prepareInterview()"><span>Create my interview plan</span><span>→</span></button>
+          <div id="interviewResult" class="result" aria-live="polite"></div>
+          <p class="fine-print">AI-generated preparation suggestions. Verify current hiring rounds and requirements with the company's official careers site.</p>
+        </article></section>
+<footer><span>✦ CareerAI</span><span>Built for your next chapter · 2026</span></footer>
+</main></div><script src="/bhanu.js"></script></body></html>

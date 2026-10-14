@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f6f0e4"><title>Career guidance | CareerAI</title>
+<link rel="stylesheet" href="/bhanu.css">
+</head><body><div class="app-shell">
+<aside class="sidebar">
+  <a class="brand" href="/dashboard"><span class="brand-mark">✦</span><span>Career<span class="brand-accent">AI</span><small>CAREER COMPANION</small></span></a>
+  <div class="nav-label">WORKSPACE</div>
+  <a class="nav-item " href="/dashboard"><span>⌂</span> Overview</a>
+  <a class="nav-item " href="/resume"><span>▤</span> Resume analyzer</a>
+  <a class="nav-item active" href="/career"><span>◎</span> Career guidance</a>
+  <a class="nav-item " href="/interview"><span>✧</span> Interview prep <span class="nav-new">NEW</span></a>
+  <div class="sidebar-bottom">
+    <div class="sidebar-tip"><span class="tip-icon">✦</span><strong>Your next opportunity starts here.</strong><p>Small steps today. A stronger career tomorrow.</p></div>
+    <div class="profile"><div class="avatar">✦</div><div><strong>Your workspace</strong><small>Personal learning hub</small></div></div>
+    <a class="nav-item logout-link" href="/logout"><span>↪</span> Sign out</a>
+  </div>
+</aside>
+
+<main class="main-content">
+<header class="topbar"><div class="mobile-brand">✦ Career<span>AI</span></div><div class="breadcrumb">Workspace <span>/</span> <strong>Career guidance</strong></div><div class="topbar-right"><span class="status-dot"></span> AI career assistant <div class="top-avatar">✦</div></div></header>
+<section class="section-heading page-heading"><div><div class="eyebrow muted">PERSONALIZED GUIDANCE · 02</div><h2>Find a career path that fits you</h2><p>Tell CareerAI about your background, strengths, and interests.</p></div><a class="date-chip back-chip" href="/dashboard">← Back to overview</a></section>
+<section class="tool-grid single-tool-grid"><article class="tool-card" id="career-card">
+          <div class="card-top"><div class="tool-icon icon-mint">◎</div><span class="tag">PERSONALIZED</span></div>
+          <h3>Career guidance</h3><p class="card-description">Explore roles that fit your education, strengths, and interests.</p>
+          <label for="education">Education</label>
+          <input id="education" type="text" placeholder="e.g. B.Tech in Computer Science">
+          <label for="skills">Your skills</label>
+          <input id="skills" type="text" placeholder="e.g. Python, SQL, communication">
+          <label for="interests">Career interests</label>
+          <input id="interests" type="text" placeholder="e.g. Data analytics, web development">
+          <button class="btn btn-secondary" onclick="suggestCareer()"><span>Find my career path</span><span>→</span></button>
+          <div id="careerResult" class="result" aria-live="polite"></div>
+        </article></section>
+<footer><span>✦ CareerAI</span><span>Built for your next chapter · 2026</span></footer>
+</main></div><script src="/bhanu.js"></script></body></html>
